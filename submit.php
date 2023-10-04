@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $selectedOptionsObject = $data["selectedOptions"];
         $phone = $selectedOptionsObject["Номер телефона"];
 
-        $telegramBotToken = "6540913409:AAHROLebCk82OL08su9kDPcsoc1KLrxTKOk";
+        $telegramBotToken = "6385072159:AAE1fHabQUbGnW1mhR5DMvQWnQ2H7maDn0c";
         $chatId = "-937143529";
 
         $telegramMessage = "Номер телефона: $phone\nВыбранные варианты: " . json_encode($selectedOptionsObject);
@@ -16,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Дополнительная логика для отправки данных в AmoCrm
         // Шаг 1: Авторизация в AmoCRM
         $subdomain = 'palmieri'; // Замените на ваш поддомен AmoCRM
-        $user_login = 'oleg.palmieri@ya.ru'; // Ваш логин в AmoCRM
-        $user_hash = 'sapFsOvsKovA9WK73uSJufb5fCbQAe1huiXbNqOsq5C0VA1tf6yTiCrqonPa9Gho'; // Ваш API-ключ
+        $user_login = '895c54f0-72cf-413b-ab66-eac1e04aba4d'; // Ваш логин в AmoCRM
+        $user_hash = 'ZpkvfxLNpjH3HiqnNs1dTDMaguwPIjIOUyWTa7YmfYBbRR0nviWCRLA7OjWpQmGu'; // Ваш API-ключ
 
         $auth_data = [
             'USER_LOGIN' => $user_login,
